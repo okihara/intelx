@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C129B3A419C991FB00CE07ED /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C129B3A319C991FB00CE07ED /* MyAnnotation.m */; };
+		C129B3A619C9922600CE07ED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C129B3A519C9922600CE07ED /* MapKit.framework */; };
+		C129B3AB19C9A5D000CE07ED /* intel_entities.json in Resources */ = {isa = PBXBuildFile; fileRef = C129B3AA19C9A5D000CE07ED /* intel_entities.json */; };
 		C1BBA9DB19C986CA0004140C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BBA9DA19C986CA0004140C /* Foundation.framework */; };
 		C1BBA9DD19C986CA0004140C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BBA9DC19C986CA0004140C /* CoreGraphics.framework */; };
 		C1BBA9DF19C986CA0004140C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BBA9DE19C986CA0004140C /* UIKit.framework */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C129B3A219C991FB00CE07ED /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		C129B3A319C991FB00CE07ED /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		C129B3A519C9922600CE07ED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C129B3AA19C9A5D000CE07ED /* intel_entities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intel_entities.json; sourceTree = "<group>"; };
 		C1BBA9D719C986CA0004140C /* intelmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BBA9DA19C986CA0004140C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1BBA9DC19C986CA0004140C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C129B3A619C9922600CE07ED /* MapKit.framework in Frameworks */,
 				C1BBA9DD19C986CA0004140C /* CoreGraphics.framework in Frameworks */,
 				C1BBA9DF19C986CA0004140C /* UIKit.framework in Frameworks */,
 				C1BBA9DB19C986CA0004140C /* Foundation.framework in Frameworks */,
@@ -79,9 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C129B3A919C9A5D000CE07ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C129B3AA19C9A5D000CE07ED /* intel_entities.json */,
+			);
+			name = Resources;
+			path = intelmap/Resources;
+			sourceTree = "<group>";
+		};
 		C1BBA9CE19C986CA0004140C = {
 			isa = PBXGroup;
 			children = (
+				C129B3A919C9A5D000CE07ED /* Resources */,
 				C1BBA9E019C986CA0004140C /* intelmap */,
 				C1BBA9FF19C986CA0004140C /* intelmapTests */,
 				C1BBA9D919C986CA0004140C /* Frameworks */,
@@ -101,6 +119,7 @@
 		C1BBA9D919C986CA0004140C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C129B3A519C9922600CE07ED /* MapKit.framework */,
 				C1BBA9DA19C986CA0004140C /* Foundation.framework */,
 				C1BBA9DC19C986CA0004140C /* CoreGraphics.framework */,
 				C1BBA9DE19C986CA0004140C /* UIKit.framework */,
@@ -112,6 +131,8 @@
 		C1BBA9E019C986CA0004140C /* intelmap */ = {
 			isa = PBXGroup;
 			children = (
+				C129B3A219C991FB00CE07ED /* MyAnnotation.h */,
+				C129B3A319C991FB00CE07ED /* MyAnnotation.m */,
 				C1BBA9E919C986CA0004140C /* AppDelegate.h */,
 				C1BBA9EA19C986CA0004140C /* AppDelegate.m */,
 				C1BBA9EC19C986CA0004140C /* Main.storyboard */,
@@ -231,6 +252,7 @@
 				C1BBA9F319C986CA0004140C /* Images.xcassets in Resources */,
 				C1BBA9E519C986CA0004140C /* InfoPlist.strings in Resources */,
 				C1BBA9EE19C986CA0004140C /* Main.storyboard in Resources */,
+				C129B3AB19C9A5D000CE07ED /* intel_entities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +273,7 @@
 			files = (
 				C1BBA9F119C986CA0004140C /* ViewController.m in Sources */,
 				C1BBA9EB19C986CA0004140C /* AppDelegate.m in Sources */,
+				C129B3A419C991FB00CE07ED /* MyAnnotation.m in Sources */,
 				C1BBA9E719C986CA0004140C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +479,7 @@
 				C1BBAA0B19C986CA0004140C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1BBAA0C19C986CA0004140C /* Build configuration list for PBXNativeTarget "intelmapTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +488,7 @@
 				C1BBAA0E19C986CA0004140C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
